@@ -1,0 +1,274 @@
+:root {
+    --main-color: #d3ad7f;
+    --Preto: #13131a;
+    --background: #010103;
+    --border: 0.1rem solid rgba(255,255,255,0.3);
+      font-size: 10px;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    outline: 0;
+    border: none;
+    text-decoration: none;     
+    text-transform: capitalize;
+    transition: 0.3s linear;
+}
+
+body{
+    background-color: var(--background);
+}
+
+section{
+    padding: 3rem 2rem;
+    margin: 0 auto;
+    max-width: 1200px;
+}
+
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 99;
+    background-color: black;
+   
+}
+
+.header section {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 0.2rem;
+    padding-bottom: 1.5rem;
+    
+}
+
+.logo img {
+  max-width: 90px; 
+  height: auto;
+}
+
+.NavBar a {
+    margin: 0 2rem;
+    font-size: 1.8rem;
+    color: rgb(255, 255, 255);  
+}
+
+.NavBar a:hover {
+    color: var(--main-color);
+    border-bottom: 0.1rem solid var(--main-color) ;
+    padding-bottom: 0.5rem;
+    font-size: 1.9rem;
+}
+
+.icones img {
+    margin: 1.2rem;
+    cursor: pointer;
+}
+
+.icones img:hover {
+    width: 37px;
+    height: 37px;
+}
+
+.botao {
+    background: rgb(155, 20, 20);
+    color: #fff;
+    padding: 1.6rem 1.2rem; 
+    font-size: 1.6rem;     
+    cursor: pointer;
+    margin-top: 1rem;
+    border-radius: 5px;
+    text-decoration: none;
+    display: inline-block;
+    border-radius: 5px;    
+}
+
+.botao:hover {
+    letter-spacing: 0.2rem;
+}
+
+.home-conteiner {
+    background: url("/img/coffee_2.jpg");
+    background-position: center;
+    background-size: cover;
+}
+
+.home-conteiner section {
+    display: flex;
+    align-items: center;
+    min-height: 100vh;
+
+}
+
+.conteudo {
+    max-width: 60rem;
+}
+
+.conteudo h3{
+    color: #fff;
+    font-size: 5rem;    
+}
+
+.conteudo p {
+    color: #fff;
+    font-size: 2rem;
+    font-weight:100;
+    line-height: 1.7;
+    padding: 1rem 0;
+}
+
+
+.titulo {
+    font-size: 5rem;
+    color: var(--main-color);
+    text-align: center;
+    margin-bottom: 4rem;
+}
+
+.Sobre .txt{
+    display: flex;
+    align-items: center;
+    background-color: var(--Preto);
+    gap: 1.5rem;
+}
+
+
+.Sobre .txt .conteudo {
+    padding: 2rem;
+}
+
+.Sobre .txt .conteudo .h3{
+    font-size: 3rem;
+    color: #fff;
+}
+
+.Sobre .txt .conteudo .p{
+    font-size: 1.6rem;
+    color: #fff;
+    padding: 1rem 0;
+    line-height: 1.8rem;
+}
+
+.Sobre .txt .conteiner-img img {
+    max-width: 500px; 
+    height: 48rem;     
+    border-radius: 8px; 
+}
+
+.menu .box-conteiner {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+    gap: 1.5rem;
+}
+
+.menu .box-conteiner .box {
+    text-align: center;
+    border: var(--border);
+    padding: 5rem;
+    cursor: pointer;
+}
+
+
+.menu .box-conteiner .box img {
+    height: 10rem;
+    border-radius: 10%;
+}
+
+.menu .box-conteiner .box h3{
+    color: #fff;
+    font-size: 2rem;
+    padding: 1rem 0;
+}
+
+.menu .box-conteiner .box .preco{
+    color: #fff;
+    font-size: 2.5rem;
+    padding: 0.5rem 0;
+}
+
+.menu .box-conteiner .box span{
+    font-size: 1.5rem;
+    text-decoration: line-through;
+    font-weight: lighter;
+}
+
+.menu .box-conteiner .box:hover{
+    background-color: #fff;
+}
+
+.menu .box-conteiner .box:hover>* {
+    color: var(--Preto);
+}
+
+.reviw .box-conteiner {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(28rem, 1fr)); 
+    gap: 2rem; 
+}
+
+.reviw .box-conteiner .box {
+    border: var(--border);
+    text-align: center;
+    padding: 3rem 2rem;
+}
+
+.reviw .box-conteiner .box p {
+    font-size: 1.5rem;
+    color: #fff;
+    padding: 2rem 0;
+    line-height: 1.8;
+}
+
+.reviw .box-conteiner .box h3 {
+    color: #fff;
+    font-size: 2rem;
+    margin: 1rem 0;
+}
+
+.reviw .box-conteiner .box .perfil {
+    height: 6rem;
+    width: 6rem;
+    border-radius: 50%;
+    margin: 1rem auto;
+    display: block;
+}
+
+/* Estrelas */
+.reviw .box-conteiner .box .estrelas img {
+    height: 3rem; 
+    width: 3rem;
+    margin: 0 0.2rem;
+}
+
+.loc {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.redes-sociais {
+    text-align: center;    
+}
+
+.redes-sociais .midia {
+    padding: 2rem 0;
+}
+
+.redes-sociais .midia img {
+    margin: 0.3rem;
+    cursor: pointer;  
+    border-radius: 50%;
+    padding: 1rem;  
+}
+
+.redes-sociais .midia img:hover{
+    background-color: var(--main-color);
+}
+
+
+
+
+
